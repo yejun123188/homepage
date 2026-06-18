@@ -14,7 +14,13 @@ export function ProjectsSection() {
 
   return (
     <>
-      <Section id="projects" eyebrow="Projects" title="서비스처럼 보이고 작동하도록 완성한 작업들입니다.">
+      <Section
+        id="projects"
+        eyebrow="Projects"
+        title="서비스처럼 보이고 작동하도록 완성한 작업들입니다."
+        className={styles.projectsSection}
+        headingClassName={styles.compactHeading}
+      >
         <div className={styles.grid}>
           {projects.map((project, index) => (
             <FadeIn key={project.id} delay={index * 0.05}>

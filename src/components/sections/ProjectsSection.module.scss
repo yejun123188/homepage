@@ -1,3 +1,23 @@
+.projectsSection {
+  :global(#projects-title) {
+    max-width: none;
+    font-size: clamp(0.72rem, 1.2vw, 1.08rem);
+    line-height: 1.35;
+    white-space: nowrap;
+  }
+}
+
+.compactHeading {
+  grid-template-columns: 120px minmax(0, 1fr);
+  gap: 22px;
+  margin-bottom: 26px;
+
+  p {
+    margin-top: 4px;
+    font-size: 0.62rem;
+  }
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

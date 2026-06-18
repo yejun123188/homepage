@@ -16,11 +16,12 @@
   }
 
   h2 {
-    max-width: 760px;
+    max-width: none;
     margin: 0;
-    font-size: clamp(1.9rem, 4.2vw, 3.7rem);
-    line-height: 1.12;
+    font-size: clamp(0.78rem, 1.8vw, 1.55rem);
+    line-height: 1.32;
     letter-spacing: 0;
+    white-space: nowrap;
   }
 
   footer {

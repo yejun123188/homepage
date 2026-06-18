@@ -7,12 +7,13 @@ type SectionProps = {
   title: string;
   children: ReactNode;
   className?: string;
+  headingClassName?: string;
 };
 
-export function Section({ id, eyebrow, title, children, className = "" }: SectionProps) {
+export function Section({ id, eyebrow, title, children, className = "", headingClassName = "" }: SectionProps) {
   return (
     <section id={id} className={`${styles.section} ${className}`} aria-labelledby={`${id}-title`}>
-      <div className={styles.heading}>
+      <div className={`${styles.heading} ${headingClassName}`}>
         <p>{eyebrow}</p>
         <h2 id={`${id}-title`}>{title}</h2>
       </div>
