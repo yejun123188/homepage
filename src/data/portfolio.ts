@@ -84,7 +84,7 @@ export const projects: Project[] = [
     techStack: ["Next.js", "TypeScript", "TMDB API", "SCSS", "Zustand"],
     features: ["TMDB API 콘텐츠 연동", "OTT 스타일 콘텐츠 탐색 UI", "상세 정보 페이지", "커넥트 모드 및 리뷰 기능 기획"],
     githubUrl: "https://github.com/yejun123188/netflix-portfolio",
-    demoUrl: "https://github.com/yejun123188/netflix-portfolio",
+    demoUrl: "https://netfli-re.netlify.app/",
     accent: "#e50914"
   }
 ];
