@@ -1,0 +1,142 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.dim {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.72);
+  border: 0;
+}
+
+.panel {
+  position: relative;
+  z-index: 1;
+  width: min(940px, 100%);
+  max-height: min(86svh, 860px);
+  overflow: auto;
+  background: var(--color-white);
+  box-shadow: 0 30px 100px rgba(0, 0, 0, 0.34);
+}
+
+.close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 2;
+  min-width: 68px;
+  height: 34px;
+  color: var(--color-white);
+  background: rgba(0, 0, 0, 0.36);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  font-size: 0.68rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.hero {
+  --accent: var(--color-red);
+  min-height: 250px;
+  display: grid;
+  align-content: end;
+  gap: 14px;
+  padding: clamp(28px, 6vw, 58px);
+  color: var(--color-white);
+  background:
+    linear-gradient(135deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.76)),
+    radial-gradient(circle at 80% 15%, color-mix(in srgb, var(--accent), white 12%), transparent 28%),
+    linear-gradient(135deg, var(--color-black), var(--accent));
+
+  p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 0.74rem;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    max-width: 620px;
+    margin: 0;
+    font-size: clamp(1.9rem, 4.2vw, 3.35rem);
+    line-height: 1.08;
+  }
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 34px;
+  padding: clamp(28px, 6vw, 58px);
+
+  div {
+    min-width: 0;
+  }
+
+  span {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--color-red);
+    font-size: 0.7rem;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin: 0;
+    color: var(--color-muted);
+  }
+
+  ul {
+    display: grid;
+    gap: 9px;
+    margin: 0;
+    padding-left: 18px;
+    color: var(--color-muted);
+  }
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: flex-start;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+    min-height: 46px;
+    padding: 0 18px;
+    color: var(--color-white);
+    background: var(--color-black);
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  a:last-child {
+    background: var(--color-red);
+  }
+}
+
+@media (max-width: 720px) {
+  .backdrop {
+    padding: 0;
+    place-items: end;
+  }
+
+  .panel {
+    width: 100%;
+    max-height: 92svh;
+  }
+
+  .body {
+    grid-template-columns: 1fr;
+  }
+}
