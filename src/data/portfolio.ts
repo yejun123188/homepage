@@ -71,7 +71,7 @@ export const projects: Project[] = [
     techStack: ["React", "Firebase", "SCSS", "JavaScript", "Git"],
     features: ["브랜드 무드 기반 리디자인", "상품 리스트 및 상세 화면", "Firebase 데이터 연동", "반응형 쇼핑몰 레이아웃"],
     githubUrl: "https://github.com/yejun123188/MatinKim",
-    demoUrl: "https://github.com/yejun123188/MatinKim",
+    demoUrl: "https://matinkim-renewal.netlify.app/",
     accent: "#111111"
   },
   {
